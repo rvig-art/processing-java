@@ -2,6 +2,8 @@ package art.rvig.processing;
 
 import processing.core.PApplet;
 
+import java.lang.invoke.MethodHandles;
+
 public class SketchTemplate extends PApplet{
 
     int x,y;
@@ -27,7 +29,7 @@ public class SketchTemplate extends PApplet{
         y = mouseY;
     }
     static public void main(String[] passedArgs) {
-        String[] appletArgs = new String[] { SketchTemplate.class.getName() };
+        String[] appletArgs = new String[] { MethodHandles.lookup().lookupClass().getName() }; // look for current class
         if (passedArgs != null) {
             PApplet.main(concat(appletArgs, passedArgs));
         } else {
