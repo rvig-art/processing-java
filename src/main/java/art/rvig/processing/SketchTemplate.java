@@ -20,7 +20,7 @@ public class SketchTemplate extends PApplet{
 
     public void draw(){
         background(0xffff8000);
-        circle(x,y,width/3);
+        circle(x,y,width/3f);
     }
 
     public void mousePressed(){
