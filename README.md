@@ -2,18 +2,21 @@
 Template to use processing as java library
 
 Usefull for java developpers who wants processing great functionnality but are used to their IDE with java debugging 
-It's a workaround as latest processing libraries are not available as artefact in mavencentral
-
 
 This project is not linked to official Processing.org project.
 
-
-
 ## How-to
 
-- Download processing and install it on your computer
-- Update processing location in property "processing-directory" in pom.xml
 - copy "SketchTemplate" and write your own code
+- run from your IDE 
+  - build:
+  ```
+  mvn clean package
+  ```
+- execute (java 17)
+  ```
+  java -jar target/processing-java-1.0-SNAPSHOT-jar-with-dependencies.jar
+  ```
 - Have fun !
 
 ## TODO
